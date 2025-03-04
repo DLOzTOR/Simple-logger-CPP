@@ -14,7 +14,7 @@ SimpleLogger::~SimpleLogger()
     delete filepath;
 }
 
-void SimpleLogger::Log(char *data)
+void SimpleLogger::Log(const char *data)
 {
     std::ofstream fileStream(filepath, std::fstream::app);
     fileStream << data << "\n";

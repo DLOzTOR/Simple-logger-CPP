@@ -9,5 +9,5 @@ public:
     char *filepath;
     SimpleLogger(char *filepath);
     ~SimpleLogger();
-    void Log(char *data);
+    void Log(const char *data);
 };
